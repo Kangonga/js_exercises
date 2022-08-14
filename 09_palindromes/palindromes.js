@@ -2,8 +2,6 @@ const palindromes = function (word) {
     word = word.replace(/\W|_/g, '').toLowerCase()
     words = [...word]
     let reversed = words.reverse().join('')
-    // console.log(reversed)
-    // console.log(word)
     if(word == reversed){
         return true
     }
@@ -12,6 +10,5 @@ const palindromes = function (word) {
     }
     
 };
-console.log(palindromes('bar rab!'));
 // Do not edit below this line
 module.exports = palindromes;
